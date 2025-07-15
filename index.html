@@ -1,281 +1,762 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <title>Bootstrap Tutorial</title>
-</head>
-<body style="overflow-x: hidden;">
-  <header>
-    <nav class="navbar navbar-expand-md bg-secondary opacity-50 fixed-top px-5">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="BLUECARGO.png" alt="" width="100"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offset-md-6 offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-capitalize text-white active" aria-current="page" href="#">home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-capitalize text-white" href="#">about</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-capitalize text-white" href="#">services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-capitalize text-white" href="#">blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-capitalize text-white" href="#">contact us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div style="background-image: url('truck.png'); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%;height: 100%;" class="vw-100 vh-100 text-white position-relative">
-      <div class="position-absolute top-50 end-50 ms-3">
-        <h1 class="text-capitalize fw-bold">flexible logistics</h1>
-        <p>Transport your cargo everywhere to local and internation destination</p>
-        <a href="#" class="btn btn-success px-3 me-3">Send a parcel</a>
-        <a href="#" class="btn btn-light text-success px-5">Explore</a>
-      </div>
-    </div>
-  </header>
-  <section class="mt-5 w-100 text-center">
-    <h3 class="fw-bold text-capitalize text-info">our services</h3>
-    <div class="d-sm-block d-md-flex container gap-md-3">
-      <div class="card mb-3 shadow border-0 bg-info text-white" style="width: 16rem;">
-        <i class="bi bi-airplane-engines fs-1"></i>
-        <div class="card-body">
-          <h5 class="card-title">Air Freight</h5>
-          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, explicabo?</p>
-          <a href="#" class="btn btn-light text-capitalize text-info">learn more</a>
-        </div>
-      </div>
-      <div class="card mb-3 shadow border-0 bg-info text-white" style="width: 16rem;">
-        <i class="bi bi-truck fs-1"></i>
-        <div class="card-body">
-          <h5 class="card-title">Road Freight</h5>
-          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, explicabo?</p>
-          <a href="#" class="btn btn-light text-capitalize text-info">learn more</a>
-        </div>
-      </div>
-      <div class="card mb-3 shadow border-0 bg-info text-white" style="width: 16rem;">
-        <i class="bi bi-water fs-1"></i>
-        <div class="card-body">
-          <h5 class="card-title">Water Freight</h5>
-          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, explicabo?</p>
-          <a href="#" class="btn btn-light text-capitalize text-info">learn more</a>
-        </div>
-      </div>
-      <div class="card mb-3 shadow border-0 bg-info text-white" style="width: 16rem;">
-        <i class="bi bi-box2 fs-1"></i>
-        <div class="card-body">
-          <h5 class="card-title">Storage Freight</h5>
-          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, explicabo?</p>
-          <a href="#" class="btn btn-light text-capitalize text-info">learn more</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <section class="mt-5 w-100 text-center">
-    <div class="card container shadow bg-light rounded-0 border-0">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <div class="card-body text-info">
-            <h5 class="card-title fw-bold text-capitalize">about us</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tenetur molestias, accusamus dolor saepe praesentium magni, officiis repudiandae perspiciatis accusantium blanditiis sed unde sint. Repellat aut cum nostrum unde hic reiciendis aliquid assumenda dolores facilis sed laboriosam, animi distinctio, doloremque, minima quasi vel facere veniam ab maxime ut expedita. Dolorum quae aspernatur facilis eos ratione quo sapiente, quod nobis magnam ipsum vel, minima officiis ut consectetur unde. Culpa, fugiat accusamus eos at expedita eum hic animi maxime fugit assumenda! Veniam facilis consequatur quaerat debitis aspernatur corrupti illum, perspiciatis voluptatem? Suscipit magni quo velit nemo animi eaque culpa id distinctio doloremque.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <img src="ship1.png" class="img-fluid" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <section class="mt-5 w-100 text-center">
-      <h3 class="fw-bold text-capitalize text-info">our features</h3>
-      <div class="d-sm-block d-md-flex container gap-md-3">
-        <div class="card mb-4 shadow border-0 bg-info text-white" style="width: 22rem; height: 15rem;">
-          <div class="card-body">
-            <h5 class="card-title">Flexibility and adaptability</h5>
-            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, explicabo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugiat odit nesciunt soluta officiis doloremque, ex nostrum tempore beatae, consequuntur saepe, libero inventore possimus modi voluptas dolorem est dolores expedita.</p>
-          </div>
-        </div>
-        <div class="card mb-4 shadow border-0 bg-info text-white" style="width: 22rem; height: 15rem;">
-          <div class="card-body">
-            <h5 class="card-title">Experienced Team</h5>
-            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, explicabo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugiat odit nesciunt soluta officiis doloremque, ex nostrum tempore beatae, consequuntur saepe, libero inventore possimus modi voluptas dolorem est dolores expedita.</p>
-          </div>
-        </div>
-        <div class="card mb-4 shadow border-0 bg-info text-white" style="width: 22rem; height: 15rem;">
-          <div class="card-body">
-            <h5 class="card-title">Integrated Innovation</h5>
-            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, explicabo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugiat odit nesciunt soluta officiis doloremque, ex nostrum tempore beatae, consequuntur saepe, libero inventore possimus modi voluptas dolorem est dolores expedita.</p>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="btn btn-info text-capitalize text-white" style="height: 35px;">Explore More</a>
-    </section>
-
-    <section class="mt-5 w-100 text-center">
-      <div class="card container shadow bg-light rounded-0 border-0">
-        <div class="row g-0">
-          <div class="col-md-6">
-            <img src="warehouse.png" class="img-fluid" alt="">
-            </div>
-          <div class="col-md-6">
-            <div class="card-body text-info">
-              <h5 class="card-title fw-bold text-capitalize">Our Industry Explicit</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tenetur molestias, accusamus dolor saepe praesentium magni, officiis repudiandae perspiciatis accusantium blanditiis sed unde sint. Repellat aut cum nostrum unde hic reiciendis aliquid assumenda dolores facilis sed laboriosam, animi distinctio, doloremque, minima quasi vel facere veniam ab maxime ut expedita. Dolorum quae aspernatur facilis eos ratione quo sapiente, quod nobis magnam ipsum vel, minima officiis ut consectetur unde. Culpa, fugiat accusamus eos at expedita eum hic animi maxime fugit assumenda! Veniam facilis consequatur quaerat debitis aspernatur corrupti illum, perspiciatis voluptatem? Suscipit magni quo velit nemo animi eaque culpa id distinctio doloremque.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-  <section class="my-5 w-100 text-center bg-info container">
-    <h3>OUR GOALS IN NUMBERS</h3>
-    <div class="d-md-flex  gap-md-3 ">
-      <div class="row">
-        <div class="col-md-3">
-          <i class="bi bi-box2 fs-1"></i>
-          <h3>300+</h3>
-          <h5 class="card-title">Warehouse managed</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deserunt dolore beatae architecto sequi voluptatibus eaque maxime?</p>
-        </div>
-        <div class="col-md-3">
-          <i class="bi bi-gear"></i>
-          <h3>130+</h3>
-          <h5 class="card-title">Supply Engineers</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat, impedit molestiae commodi aspernatur alias dicta.</p>
-        </div>
-        <div class="col-md-3">
-          <i class="bi bi-globe"></i>
-          <h3>60+</h3>
-          <h5 class="card-title">Countries Covered</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat, impedit molestiae commodi aspernatur alias dicta.</p>
-        </div>
-        <div class="col-md-3">
-          <i class="bi bi-geo-alt"></i>
-          <h3>500+</h3>
-          <h5 class="card-title">Companies Helped</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat, impedit molestiae commodi aspernatur.</p>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-  
-  <div class="mt-5 w-100 text-center container-fluid bg-info mx-30 my-30" style="height: 500px;">
-    <div class="card-header">
-          <h3 class="fw-bold text-capitalize text-light mb-5">OUR LATEST NEWS</h3>
-        </div>
-    <div class="d-sm-block d-md-flex gap-md-3 justify-content-center">
-      <div class="card mb-3 shadow border-0 bg-light text-info" style="width: 20rem; height: 25rem; margin-left: 5rem;">
-      <img src="ship2.png" class="card-img-top" alt="ship2">
-      <div class="card-body">
-        <p class="card-text">july 13, 2022</p>
-        <h5>
-        <p class="card-text">HELPING COMPANIES IN</p>
-          <p class="card-text">THEIR GREEN TRANSITION</p>
-          </h5>
-        <a href="#" class="btn btn-info text-capitalize text-white" style="height: 35px;">Read More</a>
-      </div>
-    </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <div class="d-sm-block d-md-flex gap-md-3 justify-content-center">
-      <div class="card mb-3 shadow border-0 bg-light text-info" style="width: 20rem; height: 25rem;">
-      <img src="cargo.png" class="card-img-top" alt="cargo">
-      <div class="card-body">
-        <p class="card-text">july 13, 2022</p>
-        <h5>
-        <p class="card-text">OUR VISION 2025:</p>
-          <p class="card-text">ZERO EMISSION</p>
-          </h5>
-        <a href="#" class="btn btn-info text-capitalize text-white" style="height: 35px;">Read More</a>
-      </div>
+
+    <title>Valime Durable Ventures Limited</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+<!-- preloader -->
+<div id="cover"> <span class="glyphicon glyphicon-refresh w3-spin preloader-Icon"></span> loading...</div>
+<!-- preloader end -->
+
+
+ 
+
+
+
+
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p> <i class='bx bxs-envelope'></i> valimedurableventures@gmail.com</p>
+                    <p> <i class='bx bxs-phone-call'></i> +243 8034205631</p>
+                </div>
+                <div class="col-auto social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100082128834973"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/jolwas1"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/jolwas91/?hl=en"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.youtube.com/channel/UCXiyW5ijRS9PEcY9Ew-2Xfw"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="d-sm-block d-md-flex gap-md-3 justify-content-center">
-      <div class="card mb-3 shadow border-0 bg-light text-info" style="width: 20rem; height: 25rem;">
-      <img src="delivery-truck.png" class="card-img-top" alt="delivery-truck">
-      <div class="card-body">
-        <p class="card-text">july 13, 2022</p>
-        <h5>
-        <p class="card-text">KEY LOGISTICS TRENDS IN</p>
-          <p class="card-text">LIFE SCIENCE 2022</p>
-          </h5>
-        <a href="#" class="btn btn-info text-capitalize text-white" style="height: 35px;">Read More</a>
-      </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo1.jpg"alt="img/logo2.png"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-brand ms-lg-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <div class="owl-carousel owl-theme hero-slider">
+        <div class="slide slide1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <!-- <h6 class="text-white text-uppercase">design Driven for professional</h6> -->
+                        <h1 class="display-3 my-4">WElCOME TO<br />VALIME DURABLE VENTURES</h1>
+                        <a href="#" class="btn btn-brand">Get Started</a>
+                        <a href="#"data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-light ms-3 ">Looking For Job?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1 text-white">
+                        <h6 class="text-white text-uppercase">We are for quality</h6>
+                        <h1 class="display-3 my-4">VALIME DURABLE <br/>VENTURES LIMITED</h1>
+                        <a href="#" class="btn btn-brand">Get Started</a>
+                        <a href="#"data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-light ms-3">Looking For Job?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+<!-- about trial
+<section class="about">
+    <div class="contain">
+        <img src="img/team_3.jpg" alt="">
+        <div class="all-text">
+            <h4>About us</h4>
+            <h1>A book</h1>
+
+
+
+
+        </div>
     </div>
-  </div>
+
+</section> -->
+
+
+   <!-- ABOUT -->
+   <section id="about">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 py-5">
+                <div class="row"> 
+                  
+                    <div class="col-12">
+                        <div class="info-box">
+                            <!-- <img src="img/about us.png" alt=""> -->
+                            <div class="ms-6">
+                            <h1>About Us</h1>
+                        <p class="fs-5">We are into community service making it an ideal into Community health service,Agro service and other related Community services. We mean to provide institutional and individual clientele in their residence. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-6">
+                    <p class="fs-5">We also provide Job opportuities for people to live a better life. Valime Durable ventures takes great pleasure in its consistence approach which helps to guarantee that all our workers meet or exceed industry standards</p>
+                    <p class="fs-5">Our obligations to our clients and office work forms major area of strenght for it, We perceive that the onboarding strategies might be challenging and request major support. Thus, when your enrollement is finished ,the power of Valime durable ventures seasoned complience experts will be there to help and suggest you guarantee a smoothe transition in the work force. </p>
+                   
+                     <h1>Our Vision</h1>
+                     <p class="fs-5">To Make the World a better and More Joyful Place.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/team_3.jpg" alt="">
+                <br><br><br><br><br><br>
+                <h1>Our Mission</h1>
+         <p class="fs-5">We are a global family having a beneficial outcome in the existence of individuals who look for optimistic well-being and monetary prosperity. </p>
+            </div>
+        </div>
     </div>
-    <section class="mt-5 w-100 text-center">
-       <div class="card container-fluid shadow bg-light rounded-0 border-0">
-        <div class="row g-0">
-    <div class="col-md-6">
-      <div class="card-body text-info">
-        <h5 class="card-title fw-bold text-capitalize">GET A QUOTE</h5>
-        <form class="" style="margin-top: 8rem;">
-          <div class="mb-3 text-start">
-            <label for="exampleInputEmail1" class="form-label text-start">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3 text-start">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <button type="submit" class="btn btn-primary">Send message</button>
+</section>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+    <!-- MILESTONE
+    <section id="milestone">
+        <div class="container">
+            <div class="row text-center justify-content-center gy-4">
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">90K+</h1>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">45M</h1>
+                    <p class="mb-0">Lines of code</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">190</h1>
+                    <p class="mb-0">Total Downloads</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">380K</h1>
+                    <p class="mb-0">YouTube Subscribers</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <!-- <h5>Our Mission</h5>    -->
+                        <h1>Our Services</h1>
+                        <p class="mx-auto">Valime Durable Ventures provides the following services to the public</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/commu-removebg-preview.png" alt="">
+                        <h5>Community Health Services</h5>
+                        <p>We ensure to keep people well at home and in community settings close at home, support them to live independently.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/agroservices-removebg-preview.png" alt="">
+                        <h5>Agro Services</h5>
+                        <p>We provide modern forms and varieties of practices and disciplines involved in modern production of food within the agricultural industry.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/capacityicon-removebg-preview.png" alt="">
+                        <h5>Capacity Building</h5>
+                    
+                        <p>We also conduct training programmes, business development activities,workshops for in-depth discussions of specific topics;conferences to its members and the public.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/job1-removebg-preview.png" alt="">
+                        <h5>Job Opportuinities</h5>
+                        <p>We provide Job opportuinities to everyone irrespective of their age, tribe and religion. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/health-removebg-preview.png" alt="">
+                        <h5>Health Consultancy</h5>
+                        <p>We provide expertise advise to the public to ensure that they live a good and healthy standard of living.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/bodyheck-removebg-preview.png" alt="">
+                        <h5>Body Checks</h5>
+                        <p>We help in providing compulsive body checks to people by tracking their body shapes, size, weight and physical features</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <!-- <h6>Work</h6> -->
+                        <h1>Successful Visitations and Bonuses</h1>
+                        <p class="mx-auto">Pictures of places visited around the world in the cause of doing our work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects-slider" class="owl-theme owl-carousel">
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project6.jpg" alt="">
+                <div class="content">
+                    <h2>Dubai</h2>
+                    <!-- <h6>Website Design</h6> -->
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project2.jpg" alt="">
+                <div class="content">
+                    <h2>Turkey</h2>
+                    <!-- <h6>Website Design</h6> -->
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project3.jpg" alt="">
+                <div class="content">
+                    <h2>Dubai</h2>
+             <!-- <h6>Website Design</h6>  -->
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/this team.jpg" alt="">
+                <div class="content">
+                    <h2>South Africa</h2>
+                     <!-- <h6>Website Design</h6>  -->
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project4.jpg" alt="">
+                <div class="content">
+                    <h2>Training Conference in Lagos</h2>
+                    <!-- <h6>Website Design</h6> -->
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/team10.jpg" alt="">
+                <div class="content">
+                    <h2>Turkey</h2>
+                    <!-- <h6>Website Design</h6> -->
+                </div>
+            </div>
+            <!-- <div class="project">
+                <div class="overlay"></div>
+                <img src="img/edited.jpg" alt="">
+                <div class="content">
+                    <h2>Turkey</h2>
+                    <h6>Website Design</h6>
+                    <h4>realy</h4>
+                </div>
+            </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <!-- <h6>Team</h6> -->
+                        <h1>Valime Durable Ventures Team members</h1>
+                        <!-- <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/put me.jpg" alt="">
+                            <!-- <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div> -->
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Mikail & Munirat Jimoh</h5>
+                        <p>My name is Mikail & Munirat Jimor. I was a teacher before this company earning 35k per month.But now , I earn more than 2.5million.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/team.jpg" alt="">
+                            <!-- <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div> -->
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Sanson Mathew</h5>
+                        <p>I was a drummer and at the same time a foootballer. The last work I did was selling recharge card before I met this company. Today, through this ccompany,I'm driving my car, I have travelled abroad several timed like Dubai,cape town.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/bg_banner1 (1).jpg" alt="">
+                            <!-- <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div> -->
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>JOLASUN WASIU</h5>
+                        <p>My name is Jolasun Wasiu. I came from a poor background where to eat 3 square meals was a problem. One day , I came acrodd this company and today, I am earning over one million.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/team1.jpg" alt="">
+                            <!-- <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div> -->
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Michael Dickson</h5>
+                        <p>Before Joining this company, I was a computer operator collecting 10k as my salary per month.
+                            Today, through this company, I make above half a million every month. I have been to different countries and today, I really thank God for making jooin this company.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="reviews">
+
+        <div class="owl-theme owl-carousel reviews-slider container">
+            <div class="review">
+                <div class="person">
+                    <img src="img/gal2.jpg" alt="">
+                    <h5>Ekeh Amarachi</h5>
+                    <small>Bsc(Economics)</small>
+                </div>
+                <h3>My name is Ekeh Amarachi, I am a graduate with Bsc in Economis. I came across this company while I was looking for work that can pay my worth and today, the company is paying me. Thanks to Valime!</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="img/testi6.jpg" alt="">
+                    <h5>Mrs Bose Tokunbo</h5>
+                    <small>Bsc(Economics)</small>
+                </div>
+                <h3>I was suffering from a chronic ulcer that never allow me have peace of mind before I started taking neolife product, It was just like margic, it really work. I'm now free from ulcer. </h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="img/gal2.jpg" alt="">
+                    <h5>Ekeh Amarachi</h5>
+                    <small>Bsc(Economics)</small>
+                </div>
+                <h3>My name is Ekeh Amarachi, I am a graduate with Bsc in Economis. I came across this company while I was looking for work that can pay my worth and today, the company is paying me. Thanks to Valime!</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="img/testimony2.jpg" alt="">
+                    <h5>Mrs Akara Udeze</h5>
+                    <small>Business Woman</small>
+                </div>
+                <h3>My name is Mrs Akara udeze from Enugu East. For a long time I was suffering of Fibroid, been to different hospitals but was still so sick. A friend introduce me to neolife products and ever since then, my life turn around for good.Neolife product is now my favorite and I recommend it to everyone.</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="img/testi.jpg" alt="">
+                    <h5>Chief Paul Okeke</h5>
+                    <small>Staff of Enugu fa-amazon</small>
+                </div>
+                <h3>Over five years of chronic Uler and Dizzleness cured.I have been suffering from ulcer for over five years and have been taking different drugs all to no avail. One day a friend introduce me to noelife products and after taking of their products for few weeks, the ulcer dissapeared.</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <!-- <h6>Blog</h6> -->
+                        <h1>Our Video Testimonials</h1>
+                        <p class="mx-auto">Here are evidence and testimonies of those who join our company.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <video width="355" height="250" controls>
+                        <source src="img/VID-20230110-WA0041.mp4" type="video/mp4">
+                        </video>
+                        <!-- <a href="#" class="tag">Web Design</a> -->
+                        <div class="content">
+                            <small>01 Dec, 2023</small>
+                            <!-- <h5>Web Design trends in 2023</h5> -->
+                            <!-- <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p> -->
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <video width="355" height="250" controls>
+                            <source src="img/2023-01-25_1674656741032.mp4" type="video/mp4">
+                            </video>
+                        <!-- <a href="#" class="tag">Programming</a> -->
+                        <div class="content">
+                            <small>01 Dec, 2023</small>
+                            <!-- <h5>Web Design trends in 2023</h5> -->
+                            <!-- <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p> -->
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <video width="355" height="250" controls>
+                            <source src="img/2023-01-20_1674241002642.mp4" type="video/mp4">
+                            </video>
+                        <!-- <a href="#" class="tag">Marketing</a> -->
+                        <div class="content">
+                            <small>01 Dec, 2023</small>
+                            <!-- <h5>Web Design trends in 2023</h5> -->
+                            <!-- <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p> -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h4 class="navbar-brand">Valime Durable Ventures<span class="dot">.</span></h4>
+                        <p>Your Best Choice To Health and wealth.</p>
+                        <div class="col-auto social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100082128834973"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://twitter.com/jolwas1"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://www.instagram.com/jolwas91/?hl=en"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://www.youtube.com/channel/UCXiyW5ijRS9PEcY9Ew-2Xfw"><i class='bx bxl-youtube'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0">Copyright@2023. All rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-sm-12 bg-cover"
+                                style="background-image: url(img/c2.jpg); min-height:300px;">
+                                <div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                                           
+    <div class="contain">
+        <h1>Contact Me</h1>
+        <p>Feel free to contact us and we will get back to you as soon as we can.</p>
+        <form action="mail.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="name" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="phone_number">Phone_number</label>
+            <input type="phone_number" name="phone_number" id="phone_number">
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject">
+            <label for="message">Message</label>
+            <textarea name="message" cols="1" rows="5"></textarea>
+            <input type="submit" value="Send">
+           
+          
         </form>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <img src="truck.png" class="img-fluid" alt="truck_picture">
-      </div>
-      </div>
-      </div>
-  </section>
-
-  <section class="my-0 w-100 text-center bg-info container-fluid">
-    <!-- <div class="d-md-flex  gap-md-3"> -->
-      <div class="row my-4">
-        <div class="col-md-3 text-start mt-3">
-        <h5><img src="BLUECARGO.png" alt="bluecargo_logo" style="width: 75px;align-self: start;"></h5>
-          <p>156, harry johnson street,<br>kansas united state.<br> phone/fax: 097567899 <br>Email: bluecargo@gmail.com</p>
-        </div>
-        <div class="col-md-3 mt-3 text-start">
-          <h5 class="card-title">Our Services</h5>
-          <p>warehousing <br>Ocean Freight <br>Road Freight <br>Air Freight <br>Supply Chain <br>Packaging</p>
-        </div>
-        <div class="col-md-3 mt-3 text-start">
-          <h5 class="card-title">About Us</h5>
-          <p>Meet our Team <br>News and Media <br>Carrer</p>
-        </div>
-        <div class="col-md-3 mt-3 text-start">
-          <h5 class="card-title">Quick Links</h5>
-          <p>Request a book <br> Track and Trace <br>Find a Location <br>Global Agent <br>Help and FAQs</p>
-        </div>
-      <!-- </div> -->
-
     </div>
 
-  </section>
+                                <!-- <form class="p-lg-5 col-12 row g-3">
+                                    <div>
+                                        <h1>Fill This Form</h1>
+                                    <p>Fell free to contact us and we will get back to you as soon as possible</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" required class="form-label">First name</label>
+                                        <input type="text" class="form-control" placeholder="Your Name" id="userName" required
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" placeholder="Name" id="userName" required
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <label for="userName" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" placeholder="Enter your Email" id="userName" required
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control"placeholder="Enter Phone Number" id="phoneNumber" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+                                        <textarea name="" placeholder="Enter Your Message." class="form-control" id=""  rows="4"></textarea>
+                                    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-brand">Send Message</button>
+                                        
+                                    </div>
+                                    <div  class="col-6">
+                                        <button type="button" class="btn-close"disable arial-label="Close"></button>
+                                        <span aria-hidden="true">&times;</span>
+                                    </div>
+                                </form> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Chatbot -->
+<div class="botIcon">
+	<div class="botIconContainer">
+		<div class="iconInner">
+			<i class="fa fa-commenting" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div class="Layout Layout-open Layout-expand Layout-right">
+		<div class="Messenger_messenger">
+			<div class="Messenger_header">
+				<h4 class="Messenger_prompt">How can we help you?</h4> <span class="chat_close_icon"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+			</div>
+			<div class="Messenger_content">
+				<div class="Messages">
+					<div class="Messages_list"></div>
+				</div>
+				<form id="messenger">
+					<div class="Input Input-blank">
+<!-- 							<textarea name="msg" class="Input_field" placeholder="Send a message..."></textarea> -->
+						<input name="msg" class="Input_field" placeholder="Send a message...">
+						<button type="submit" class="Input_button Input_button-send">
+							<div class="Icon">
+								<svg viewBox="1496 193 57 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g id="Group-9-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1523.000000, 220.000000) rotate(-270.000000) translate(-1523.000000, -220.000000) translate(1499.000000, 193.000000)">
+										<path d="M5.42994667,44.5306122 L16.5955554,44.5306122 L21.049938,20.423658 C21.6518463,17.1661523 26.3121212,17.1441362 26.9447801,20.3958097 L31.6405465,44.5306122 L42.5313185,44.5306122 L23.9806326,7.0871633 L5.42994667,44.5306122 Z M22.0420732,48.0757124 C21.779222,49.4982538 20.5386331,50.5306122 19.0920112,50.5306122 L1.59009899,50.5306122 C-1.20169244,50.5306122 -2.87079654,47.7697069 -1.64625638,45.2980459 L20.8461928,-0.101616237 C22.1967178,-2.8275701 25.7710778,-2.81438868 27.1150723,-0.101616237 L49.6075215,45.2980459 C5.08414042,47.7885641 49.1422456,50.5306122 46.3613062,50.5306122 L29.1679835,50.5306122 C27.7320366,50.5306122 26.4974445,49.5130766 26.2232033,48.1035608 L24.0760553,37.0678766 L22.0420732,48.0757124 Z" id="sendicon" fill="#96AAB4" fill-rule="nonzero"></path>
+									</g>
+								</svg>
+							</div>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Chatbot -->
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
